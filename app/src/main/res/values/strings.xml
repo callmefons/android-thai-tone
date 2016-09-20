@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Thai Pronunciation Application TPA</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="tpa_description">
+        TPA is based on research projects by Assist.Prof.Dr.Phanintra Teeranon upon
+        “An acoustic study and perception test of Thai tones produced by those studying
+        Thai as a foreign language and hearing impaired children”
+        funded by The Higher Education Research Promotion (HERP).
+    </string>
+    <string name="learning">Learning</string>
+
+</resources>
