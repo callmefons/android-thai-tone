@@ -12,4 +12,185 @@
     </string>
     <string name="learning">Learning</string>
 
+    <string name="tab_menu_1">Main Menu</string>
+    <string name="tab_menu_2">Learning each Thai Tones</string>
+    <string name="tab_menu_3">Pronunciation Videos</string>
+    <string name="txtConsonants">Consonants พยัญชนะ</string>
+    <string name="title_activity_consonants">ConsonantsActivity</string>
+    <string name="title_activity_detail">Detail Activity</string>
+
+    //Learning each thai tones
+    //set1
+    <string name="thai_tone_1_1">คา</string>
+    <string name="thai_tone_1_2">ข่า</string>
+    <string name="thai_tone_1_3">ค่า</string>
+    <string name="thai_tone_1_4">ค้า</string>
+    <string name="thai_tone_1_5">ขา</string>
+    //set2
+    <string name="thai_tone_2_1">นา</string>
+    <string name="thai_tone_2_2">หน่า</string>
+    <string name="thai_tone_2_3">หน้า</string>
+    <string name="thai_tone_2_4">น้า</string>
+    <string name="thai_tone_2_5">หนา</string>
+    //set3
+    <string name="thai_tone_3_1">คา</string>
+    <string name="thai_tone_3_2">ข่า</string>
+    <string name="thai_tone_3_3">ค่า</string>
+    <string name="thai_tone_3_4">ค้า</string>
+    <string name="thai_tone_3_5">ขา</string>
+    //set4
+    <string name="thai_tone_4_1">ไซ</string>
+    <string name="thai_tone_4_2">ใส่</string>
+    <string name="thai_tone_4_3">ใส้</string>
+    <string name="thai_tone_4_4">ไซ้</string>
+    <string name="thai_tone_4_5">ใส</string>
+
+
+    <string name="consonantsTitle">Consonants เสียงพยัญชนะ</string>
+    <string name="consonants01a">
+        เสียงพยัญชนะภาษาไทยมี 21 เสียง
+        อวัยะที่ออกเสียงพยัญชนะจะมีปากบน ปากล่าง ลิ้น ฟัน ปุ่มเหงือก เพดานแข็ง เพดานอ่อน ช่องปาก และช่องจมูก
+        เวลาเราออกเสียงพยัญชนะ จะดู 3 ส่วน ส่วนฐาน-กรณ์ หรือ ที่เกิดเสียง (place of articulation) กับ
+        ลักษณะการออกเสียง (manner of articulation) และการสั่นของเส้นเสียง (vocal cords)
+    </string>
+    <string name="consonants02a">
+        ส่วนที่เกิดเสียงจะดู อวัยวะที่ขยับ กับ อวัยวะที่ไม่ขยับ อวัยวะที่ขยับเรียกว่า กรณ์ หรือ active articulator  ส่วนอวัยวะที่ไม่ขยับเรียกว่า ฐาน หรือ passive articulator
+        ลักษณะการออกเสียง หรือ วิธีกักกั้นลมในช่องปาก เราจะดูว่าเวลาออกเสียงพยัญชนะหนึ่งๆมีการกักลมสนิท เรียกว่า เสียงกัก (stops) หรือ กักลมบางส่วนปล่อยลมบางส่วน เรียกว่า เสียงเสียดแทรก (fricative) หรือ ลดเพดานอ่อนลงเปิดช่องให้ลมออกทั้งช่องปากและช่องจมูก เรียกว่า เสียงนาสิก (nasals) หรือ ปล่อยลมออกข้างลิ้น เรียกว่า เสียงข้างลิ้น (lateral) หรือ กักลมน้อยมาก เรียกว่า เสียงเปิด (approximant)
+        เสียงที่เปล่งออกมาแล้วเส้นเสียงสั่น เรียกว่า เสียงก้อง (voicing) เสียงที่เปล่งออกมาแล้ว เส้นเสียงไม่สั่น เรียกว่า เสียงไม่ก้อง (voiceless)
+    </string>
+    <string name="txt_consonants01">ป เปอะ เช่น pa:</string>
+    <string name="txt_consonants02">พ เพอะ เช่น พา pha:</string>
+    <string name="txt_consonants03">บ เช่น บา ba:</string>
+    <string name="txt_consonants04">ต (ต ฏ) เตอะ เช่น ตา ta:</string>
+    <string name="txt_consonants05">ท (ท ธ ฒ ฐ ถ) เทอะ เช่น ทา tha:</string>
+    <string name="txt_consonants06">ด (ด ฎ) เดอะ เช่น ดา da:</string>
+    <string name="txt_consonants07">ค (ค ต ฆ ข ฃ) เคอะ เช่น คา ka:</string>
+    <string name="txt_consonants08">ก เกอะ เช่น กา ka:</string>
+    <string name="txt_consonants09">จ เจอะ เช่น จา ca:</string>
+    <string name="txt_consonants10">อ เออะ เช่น อา าa:</string>
+    <string name="txt_consonants11">ช (ช ฌ ฉ) เชอะ เช่น ชา cha:</string>
+    <string name="txt_consonants12">ฟ (ฟ ฝ) เฟอะ เช่น ฟา fa:</string>
+    <string name="txt_consonants13">ฮ (ฮ ห) เฮอะ เช่น ฮา ha:</string>
+    <string name="txt_consonants14">ม เมอะ เช่น มา ma:</string>
+    <string name="txt_consonants15">น (น ณ) เนอะ เช่น นา na:</string>
+    <string name="txt_consonants16">ง เงอะ เช่น งา a:</string>
+    <string name="txt_consonants17">ล (ล ฬ) เลอะ เช่น ลา la:</string>
+    <string name="txt_consonants18">ร เรอะ เช่น รา ra:</string>
+    <string name="txt_consonants19">ซ (ซ ศ ษ ส) เซอะ เช่น สา sa:</string>
+    <string name="txt_consonants20">เวอะ เช่น วา wa:</string>
+    <string name="txt_consonants21">ย (ย ญ) เยอะ เช่น ยา ja:</string>
+
+    <string name="word_consonants01">p</string>
+    <string name="word_consonants02">ph</string>
+    <string name="word_consonants03">b</string>
+    <string name="word_consonants04">t</string>
+    <string name="word_consonants05">th</string>
+    <string name="word_consonants06">d</string>
+    <string name="word_consonants07">kh</string>
+    <string name="word_consonants08">k</string>
+    <string name="word_consonants09">c</string>
+    <string name="word_consonants10">ar</string>
+    <string name="word_consonants11">ch</string>
+    <string name="word_consonants12">f</string>
+    <string name="word_consonants13">h</string>
+    <string name="word_consonants14">m</string>
+    <string name="word_consonants15">n</string>
+    <string name="word_consonants16">ngaa</string>
+    <string name="word_consonants17">l</string>
+    <string name="word_consonants18">r</string>
+    <string name="word_consonants19">s</string>
+    <string name="word_consonants20">w</string>
+    <string name="word_consonants21">j</string>
+
+
+    <!--Vowels-->
+    <string name="vowelsTitle">Vowels เสียงสระ</string>
+    <string name="vowelsContent">สระในภาษาไทยมี 21 เสียง ประกอบด้วย สระเดี่ยว 18 เสียง สระประสม 3 เสียง
+เวลาเราออกเสียงสระ จะดูที่ 3 ส่วน คือ ลิ้นขยับบน-ล่าง (tongue height) ลิ้นขยับหน้า-หลัง (tongue advancement) และริมฝีปากห่อ-เหยียด (lips rounding) โดยสระสั้นจะแทนด้วยสัญลักษณ์ที่มีตัวสัทอักษรเดียว ส่วนสระยาวจะมีเครื่องหมาย  ตามหลังเสียงสระแต่ละเสียง</string>
+    <string name="vowelsTitle2">สระเดี่ยว (monophthongs)</string>
+
+    <string name="word_vowels01">i</string>
+    <string name="word_vowels02">i:</string>
+    <string name="word_vowels03">e</string>
+    <string name="word_vowels04">e:</string>
+    <string name="word_vowels05">ɛ</string>
+    <string name="word_vowels06">ɛ:</string>
+    <string name="word_vowels07">ɯʔ</string>
+    <string name="word_vowels08">ɯ</string>
+    <string name="word_vowels09">ɤ</string>
+    <string name="word_vowels10">ɤː</string>
+    <string name="word_vowels11">ä</string>
+    <string name="word_vowels12">äː</string>
+    <string name="word_vowels13">u</string>
+    <string name="word_vowels14">uː</string>
+    <string name="word_vowels15">o</string>
+    <string name="word_vowels16">oː</string>
+    <string name="word_vowels17">ɔ</string>
+    <string name="word_vowels18">ɔː</string>
+    <string name="word_vowels19">ia</string>
+    <string name="word_vowels20">ɯä</string>
+    <string name="word_vowels21">uä</string>
+
+    <string name="txt_vowelds01">ิ เช่น อิ ʔi</string>
+    <string name="txt_vowelds02">อี เช่น อี ʔi:</string>
+    <string name="txt_vowelds03">เ-ะ เช่น เอะ  ʔe</string>
+    <string name="txt_vowelds04">เ- เช่น เอ ʔe:</string>
+    <string name="txt_vowelds05">แ-ะ เช่น แอะ ʔɛ</string>
+    <string name="txt_vowelds06">แ- เช่น แอ ʔɛ:</string>
+    <string name="txt_vowelds07">ึ เช่น อึ</string>
+    <string name="txt_vowelds08">ื เช่น อือ ɯː</string>
+    <string name="txt_vowelds09">เ-อะ เช่น เออะ ɤʔ</string>
+    <string name="txt_vowelds10">เ-อ เช่น เออ ɤː</string>
+    <string name="txt_vowelds11">-ะ เช่น อะ äʔ</string>
+    <string name="txt_vowelds12">-า เช่น อา äʔ:</string>
+    <string name="txt_vowelds13">ุ เช่น อุ uʔ</string>
+    <string name="txt_vowelds14">ู เช่น อู uː</string>
+    <string name="txt_vowelds15">โ-ะ เช่น โอะ oʔ</string>
+    <string name="txt_vowelds16">โ เช่น โอ oː</string>
+    <string name="txt_vowelds17">เ-าะ เช่น เอาะ ɔʔ</string>
+    <string name="txt_vowelds18">-อ เช่น ออ ɔʔ:</string>
+    <string name="txt_vowelds19">เ ี ย เช่น เอีย ia</string>
+    <string name="txt_vowelds20">เ ี อ เช่น เอีอ ia ɯä</string>
+    <string name="txt_vowelds21"> -ัว เช่น อัว uä</string>
+
+    <string name="group_vowelds01">อิ อึ อุ</string>
+    <string name="group_vowelds02">อี อือ อู</string>
+    <string name="group_vowelds03">เอะ เออะ โอะ</string>
+    <string name="group_vowelds04">เอ เออ โอ</string>
+    <string name="group_vowelds05">แอะ อะ เอาะ</string>
+    <string name="group_vowelds06">แอ อา ออ</string>
+    <string name="group_vowelds07">อิ เอะ แอะ</string>
+    <string name="group_vowelds08">อี เอ แอ</string>
+    <string name="group_vowelds09">อึ เออะ อะ</string>
+    <string name="group_vowelds10">อือ เออ อา</string>
+    <string name="group_vowelds11">อุ โอะ เอาะ</string>
+    <string name="group_vowelds12">อู โอ ออ</string>
+    <string name="group_vowelds13">เอีย เอือ อัว</string>
+    <string name="title_activity_vowels_practice_list">VowelsPracticeList</string>
+
+
+    <!--Symbols-->
+    <string name="symbolsTitle">Thai Tones Symbols วรรณยุกต์</string>
+    <string name="symbolsContent">
+        เสียงวรรณยุกต์ภาษาไทยมี 5 เสียง
+อวัยะที่ออกเสียงวรรณยุกต์จะเป็นเส้นเสียงในกล่องเสียง ถ้าเส้นเสียงสั่นด้วยอัตราเร็วสูง เสียงวรรณยุกต์จะสูง ถ้าเส้นเสียงสั่นด้วยอัตราการสั่นต่า เสียงวรรณยุกต์จะต่า
+เสียงวรรณยุกต์ในภาษาไทยจะมีความสูงต่าเทียบได้กับโน้ตดนตรี ที่ปรากฎบน musical bar 5 เส้น เส้นล่างสุดแทนระดับเสียงต่าที่สุด มีค่าเท่ากับเลข 1 เส้นบนสุดแทนระดับเสียงสูงที่สุด มีค่าเท่ากับเลข 5 เส้นกลางแทนระดับเสียงกลาง มีค่าเท่ากับเลข 3 เป็นต้น
+    </string>
+    <string name="symbolsTitle2">สัญลักษณ์เสียงวรรณยุกต์Thai tone symbols</string>
+
+
+    <!--Learning each tone by word category-->
+    <string name="learn_cat_num">ตัวเลข Cardinal numbers</string>
+    <string name="learn_cat_anim">สัตว์ Animals</string>
+    <string name="learn_cat_thing">สิ่งของ Things</string>
+    <string name="learn_cat_color">สี Colors</string>
+    <string name="learn_cat_action">กริยา Actions</string>
+
+    <!--Learning The minimal pairs of thai tones-->
+    <string name="learn_minimal_pairs">Learning The Minimal Pairs of Thai Tones</string>
+    <string name="learn_minimal_pairs_mid">สามัญ-เอก Mid-Low</string>
+    <string name="learn_minimal_pairs_low">เอก-โท Low-Falling</string>
+    <string name="learn_minimal_pairs_high">ตรี-จัตวา High-Rising</string>
+
+
 </resources>

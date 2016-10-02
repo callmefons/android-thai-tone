@@ -1,5 +1,6 @@
 package com.thai.kmutt.thaitone;
 
+import android.media.AudioManager;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
@@ -10,12 +11,14 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 
 import com.thai.kmutt.thaitone.fragment.ThreeFragment;
+import com.thai.kmutt.thaitone.mApdater.MyPageAdapter;
 
 public class MainActivity extends AppCompatActivity {
     MyPageAdapter adapter;
     ViewPager pager;
 
     protected void onCreate(Bundle savedInstanceState) {
+        setVolumeControlStream(AudioManager.STREAM_MUSIC);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
@@ -51,9 +54,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
     public Fragment getActiveFragment(ViewPager container, int position) {
         String name = "android:switcher:" + container.getId() + ":" + position;
         return getSupportFragmentManager().findFragmentByTag(name);
     }
+
+
 
 }

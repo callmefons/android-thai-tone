@@ -1,15 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="Tab 1"
-        android:textAppearance="?android:attr/textAppearanceLarge"/>
 
-</RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_consonants"
+            android:layout_gravity="center"
+            android:text="@string/txtConsonants"
+            android:padding="10px"
+            android:layout_margin="20px"
+            android:textAlignment="center"
+            android:background="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn_vowels"
+            android:layout_gravity="center"
+            android:text="@string/vowelsTitle"
+            android:padding="10px"
+            android:layout_margin="20px"
+            android:textAlignment="center"
+            android:background="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <Button
+            android:id="@+id/btn_symbols"
+            android:layout_gravity="center"
+            android:text="@string/symbolsTitle"
+            android:padding="10px"
+            android:layout_margin="20px"
+            android:textAlignment="center"
+            android:background="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+
+
+</LinearLayout>

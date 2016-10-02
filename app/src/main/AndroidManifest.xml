@@ -15,7 +15,35 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainMenuActivity"></activity>
+        <activity android:name=".MainMenuActivity" />
+        <activity android:name=".ConsonantsActivity" />
+        <activity android:name=".mDetail.ConsonantsDetailActivity" />
+        <activity android:name=".VowelsActivity" />
+        <activity android:name=".mDetail.VowelsDetailActivity" />
+        <activity android:name=".LearnEachThaiActivity" />
+        <activity
+            android:name=".mDetail.DetailActivity"
+            android:label="@string/title_activity_detail"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".SymbolsActivity" />
+        <activity
+            android:name=".mDetail.VowelsPracticeListActivity"
+            android:label="@string/title_activity_vowels_practice_list"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".mDetail.VowelsPracticeDetailActivity" />
+        <activity android:name=".LearnToneByCategory" />
+        <activity android:name=".LearnByNumberActivity" />
+        <activity android:name=".mDetail.LearnByNumberDetail" />
+        <activity android:name=".LearnByAnimalActivity" />
+        <activity android:name=".mDetail.LearnByAnimalDetailActivity" />
+        <activity android:name=".LearnByThingsActivity" />
+        <activity android:name=".mDetail.LearnByThingsDetailActivity" />
+        <activity android:name=".LearnByColorsActivity" />
+        <activity android:name=".mDetail.LearnByColorsDetailActivity" />
+        <activity android:name=".LearnByActionsActivity" />
+        <activity android:name=".mDetail.LearnByActionsDetailActivity" />
+        <activity android:name=".LearnMinimalPairsActivity" />
+        <activity android:name=".mDetail.LearnMinimalPairsMidActivity"></activity>
     </application>
 
 </manifest>
