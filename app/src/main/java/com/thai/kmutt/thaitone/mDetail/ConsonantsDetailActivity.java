@@ -1,11 +1,9 @@
 package com.thai.kmutt.thaitone.mDetail;
 
-import android.app.Activity;
-import android.content.Intent;
+import android.graphics.Bitmap;
 import android.media.MediaPlayer;
 import android.os.Bundle;
-import android.support.v4.view.PagerAdapter;
-import android.support.v4.view.ViewPager;
+import android.support.v4.content.ContentResolverCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
@@ -13,12 +11,13 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
-import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.thai.kmutt.thaitone.ConsonantsActivity;
 import com.thai.kmutt.thaitone.R;
+
+import pl.droidsonroids.gif.GifDrawable;
+import pl.droidsonroids.gif.GifImageView;
 
 /**
  * Created by 006075 on 2/10/2559.
@@ -36,7 +35,7 @@ public class ConsonantsDetailActivity extends AppCompatActivity {
     MediaPlayer mp;
     RelativeLayout btn_control;
     int position;
-
+    GifImageView gifImageView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,12 +47,14 @@ public class ConsonantsDetailActivity extends AppCompatActivity {
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setDisplayShowTitleEnabled(false);
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 onBackPressed();
             }
         });
+
 
         position = 0;
         // Generate sample data
@@ -130,33 +131,33 @@ public class ConsonantsDetailActivity extends AppCompatActivity {
         };
 
         img = new int[]{
-                R.drawable.consonants01a,
-                R.drawable.consonants02a,
-                R.drawable.consonants01a,
-                R.drawable.consonants02a,
-                R.drawable.consonants01a,
-                R.drawable.consonants02a,
-                R.drawable.consonants01a,
-                R.drawable.consonants02a,
-                R.drawable.consonants01a,
-                R.drawable.consonants02a,
-                R.drawable.consonants01a,
-                R.drawable.consonants02a,
-                R.drawable.consonants01a,
-                R.drawable.consonants02a,
-                R.drawable.consonants01a,
-                R.drawable.consonants02a,
-                R.drawable.consonants01a,
-                R.drawable.consonants02a,
-                R.drawable.consonants01a,
-                R.drawable.consonants02a,
-                R.drawable.consonants01a,
-                R.drawable.consonants02a,
-                R.drawable.consonants01a
+                R.drawable.gif01,
+                R.drawable.gif02,
+                R.drawable.gif03,
+                R.drawable.gif04,
+                R.drawable.gif05,
+                R.drawable.gif06,
+                R.drawable.gif07,
+                R.drawable.gif08,
+                R.drawable.gif09,
+                R.drawable.gif10,
+                R.drawable.gif11,
+                R.drawable.gif12,
+                R.drawable.gif13,
+                R.drawable.gif14,
+                R.drawable.gif15,
+                R.drawable.gif16,
+                R.drawable.gif17,
+                R.drawable.gif18,
+                R.drawable.gif19,
+                R.drawable.gif20,
+                R.drawable.gif21,
+                R.drawable.gif22
         };
 
-        textTitle = (TextView) findViewById(R.id.headerTitle);
-        textTitle.setText(R.string.consonantsTitle);
+        //textTitle = (TextView) findViewById(R.id.headerTitle);
+        //textTitle.setText(R.string.consonantsTitle);
+
 
         loadData(position);
 
@@ -174,7 +175,7 @@ public class ConsonantsDetailActivity extends AppCompatActivity {
             }
         });
 
-        btn_next = (Button) findViewById(R.id.btn_next);
+        btn_next = (Button) findViewById(R.id.btn_nextword);
         btn_next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -187,13 +188,17 @@ public class ConsonantsDetailActivity extends AppCompatActivity {
             }
         });
 
+
+
     }
 
     private void loadData(int position) {
         //btn_control = (RelativeLayout) findViewById(R.id.btn_control);
         texttWord = (TextView) findViewById(R.id.txtWordConsonant);
         textView = (TextView) findViewById(R.id.txtConsonant);
+        gifImageView = (GifImageView)findViewById(R.id.gifImage);
 
+        gifImageView.setImageResource(img[position]);
         texttWord.setText(txtWord[position]);
         mp = MediaPlayer.create(this, sound[position]);
         btn_sound = (ImageButton) findViewById(R.id.btn_sound);
@@ -225,5 +230,7 @@ public class ConsonantsDetailActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+
 
 }

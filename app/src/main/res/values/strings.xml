@@ -43,7 +43,264 @@
     <string name="thai_tone_4_2">ใส่</string>
     <string name="thai_tone_4_3">ใส้</string>
     <string name="thai_tone_4_4">ไซ้</string>
-    <string name="thai_tone_4_5">ใส</string>
+
+    <!--For Mimimal-->
+    <string name="thai_tone_5_1">คา</string>
+    <string name="thai_tone_5_2">ข่า</string>
+    <string name="word_thai_mimimal_1">แม่ค้าที่จังหวัดสงขลาปลูกต้นข่าบนหลังคา</string>
+    <string name="word_eng_mimimal_1">The galangal was planted on the rooftop by a seller in Songkhla.</string>
+
+
+    <string name="thai_tone_5_3">คาว</string>
+    <string name="thai_tone_5_4">ข่าว</string>
+    <string name="word_thai_mimimal_2">นักข่าวบันเทิงชอบเขียนข่าวคาวให้ยาวเข้าไว้</string>
+    <string name="word_eng_mimimal_2">The reporter likes to write the scandalous news in detail.</string>
+
+
+
+    <string name="thai_tone_5_5">ปา</string>
+    <string name="thai_tone_5_6">ป่า</string>
+    <string name="word_thai_mimimal_3">ป้าปลูกดอกจาปาป่าไว้หน้าบ้านที่เขาใหญ่</string>
+    <string name="word_eng_mimimal_3">My aunt grew a Sonchampa tree in front of the house in Khao Yai.</string>
+
+
+    <string name="thai_tone_5_7">ปู</string>
+    <string name="thai_tone_5_8">ปู่</string>
+    <string name="word_thai_mimimal_4">ปู่ปูเสื่อไว้หน้าบ้าน</string>
+    <string name="word_eng_mimimal_4">Grandpa has put a mat in front of the house.</string>
+
+
+    <string name="thai_tone_5_9">โปรง</string>
+    <string name="thai_tone_5_10">โปร่ง</string>
+    <string name="word_thai_mimimal_5">เทรนด์กระโปรงผ้าโปร่งโดนอย่างแรง</string>
+    <string name="word_eng_mimimal_5">The see-through skirt is currently a trend.</string>
+
+
+    <string name="thai_tone_5_11">กลอง</string>
+    <string name="thai_tone_5_12">กล่อง</string>
+    <string name="word_thai_mimimal_6">ชาวบ้านเจอกล่องลอยอยู่ในแม่น้าแม่กลอง ราชบุรี</string>
+    <string name="word_eng_mimimal_6">The villagers found a box floating along Mae Klong River of Ratchaburi.</string>
+
+
+    <string name="thai_tone_5_13">ใย</string>
+    <string name="thai_tone_5_14">ใหญ่</string>
+    <string name="word_thai_mimimal_7">แมงมุมตัวใหญ่ชักใยบนเสาไฟ</string>
+    <string name="word_eng_mimimal_7">A big spider has spun long web along the electricity post.</string>
+
+    <string name="thai_tone_5_15">ดำ</string>
+    <string name="thai_tone_5_16">ด่ำ</string>
+    <string name="word_thai_mimimal_8">เรานั่งกินที่ครัวนายดาดื่มด่าบรรยากาศที่ภูเก็ต</string>
+    <string name="word_eng_mimimal_8">We had dinner at Nai Dam Kitchen to enjoy the atmosphere of Phuket</string>
+
+    <string name="thai_tone_5_17">ไทย</string>
+    <string name="thai_tone_5_18">ไถ่</string>
+    <string name="word_thai_mimimal_9">คนร้ายจับคนไทย เรียกค่าไถ่ที่หาดใหญ่</string>
+    <string name="word_eng_mimimal_9">Criminals have kidnapped Thais in Hat Yai.</string>
+
+
+    <string name="thai_tone_5_19">ฟัง</string>
+    <string name="thai_tone_5_20">ฝั่ง</string>
+    <string name="word_thai_mimimal_10">ฉันชอบนั่งริมฝั่งฟังเสียงลมที่พัทยา</string>
+    <string name="word_eng_mimimal_10">I love to sit near the shore listening to the wind at Pattaya.</string>
+
+
+    <string name="thai_tone_5_21">ยาง</string>
+    <string name="thai_tone_5_22">อย่าง</string>
+    <string name="word_thai_mimimal_11">บ้านฉันที่กาญจนบุรีขายยางอย่างดี</string>
+    <string name="word_eng_mimimal_11">My house at Kanchanaburi sells good quality tires.</string>
+
+
+    <string name="thai_tone_5_23">กำ</string>
+    <string name="thai_tone_5_24">ก่ำ</string>
+    <string name="word_thai_mimimal_12">เขาหน้าแดงก่ากาหมัดแน่นหลังแพ้แข่งชกมวยไทย</string>
+    <string name="word_eng_mimimal_12">He has a red face and holds his hands tightly after losing the Thai fight.</string>
+
+
+    <string name="thai_tone_5_25">ลม</string>
+    <string name="thai_tone_5_26">หล่ม</string>
+    <string name="word_thai_mimimal_13">มีลมที่หล่มภูเขียว จังหวัดลาปาง</string>
+    <string name="word_eng_mimimal_13">The wind blows at Lom Phu Kheaw, Lampang.</string>
+
+
+    <string name="thai_tone_5_27">ทราย</string>
+    <string name="thai_tone_5_28">ส่าย</string>
+    <string name="word_thai_mimimal_14">น้องแต้วเต้นบนหาดทรายส่ายสะโพกที่กระบี่</string>
+    <string name="word_eng_mimimal_14">Taew danced the dip in your hip on Krabi beach.</string>
+
+    <string name="thai_tone_5_29">ปน</string>
+    <string name="thai_tone_5_30">ป่น</string>
+    <string name="word_thai_mimimal_15">น้าจิ้มฝรั่งต้องเอาพริกป่นปนกับเกลือ</string>
+    <string name="word_eng_mimimal_15">We have to mix salt and chili to make the sauce for guava.</string>
+
+
+    <string name="thai_tone_5_31">ไซ</string>
+    <string name="thai_tone_5_32">ใส่</string>
+    <string name="word_thai_mimimal_16">พ่อค้านครชัยศรีจับปลาใส่ไซไว้ขายส่ง</string>
+    <string name="word_eng_mimimal_16">Nakornchaisri merchant catch fish in fish traps for wholesale.</string>
+
+
+    <string name="thai_tone_5_33">มี</string>
+    <string name="thai_tone_5_34">หมี่</string>
+    <string name="word_thai_mimimal_17">แม่บอกน้องหมิวว่ามีหมี่โคราชบนโต๊ะ</string>
+    <string name="word_eng_mimimal_17">Mommy told her daughter, Mew, that we have Korat noodles on the table.</string>
+
+
+    <string name="thai_tone_5_35">แพ</string>
+    <string name="thai_tone_5_36">แผ่</string>
+    <string name="word_thai_mimimal_18">ที่พะเยาผักตบชวาลอยเป็นแพแผ่ไปทั่วกว๊าน</string>
+    <string name="word_eng_mimimal_18">A lot of water plants are scattered in Phayao Lake.</string>
+
+
+    <string name="thai_tone_6_1">ข่า</string>
+    <string name="thai_tone_6_2">ค่า</string>
+    <string name="word_thai_mimimal_19">ช่วงนี้ข่าที่ตลาดสี่มุมเมืองมีค่าราคาสูง</string>
+    <string name="word_eng_mimimal_19">Galangal’s price of Simummuang market is high during this period.</string>
+
+    <string name="thai_tone_6_3">เข่า</string>
+    <string name="thai_tone_6_4">เข้า</string>
+    <string name="word_thai_mimimal_20">เขาคลานเข่าเข้ากราบพระที่พิษณุโลก</string>
+    <string name="word_eng_mimimal_20">He crawled on his knees to pay respect to a monk.</string>
+
+    <string name="thai_tone_6_5">ข่าว</string>
+    <string name="thai_tone_6_6">ข้าว</string>
+    <string name="word_thai_mimimal_21">ตามข่าวว่าที่จังหวัดสุพรรณบุรีมีข้าวขาวขายช่วงค่า</string>
+    <string name="word_eng_mimimal_21">According to the news, milled rice will be sold at night.</string>
+
+    <string name="thai_tone_6_7">ข่าง</string>
+    <string name="thai_tone_6_8">ข้าง</string>
+    <string name="word_thai_mimimal_22">เขาวางลูกข่างไว้ข้างขวด</string>
+    <string name="word_eng_mimimal_22">He kept the gyroscope next to the bottle.</string>
+
+    <string name="thai_tone_6_9">ป่า</string>
+    <string name="thai_tone_6_10">ป้า</string>
+    <string name="word_thai_mimimal_23">ป้าปลูกป่า เลี้ยงปลาในบ่อที่จังหวัดสิงห์บุรี</string>
+    <string name="word_eng_mimimal_23">My aunt has grown tress and fed fish.</string>
+
+    <string name="thai_tone_6_11">ปั่น</string>
+    <string name="thai_tone_6_12">ปั้น</string>
+    <string name="word_thai_mimimal_24">พวกเราปั่นจักรยานไปดูงานปั้นที่นครพนม</string>
+    <string name="word_eng_mimimal_24">We rode bicycles to visit sculpture arts at Nakhonphanom.</string>
+
+    <string name="thai_tone_6_13">เป่า</string>
+    <string name="thai_tone_6_14">เป้า</string>
+    <string name="word_thai_mimimal_25">งานวัดที่จังหวัดนครสวรรค์มีปาเป้าเป่าลูกโป่ง</string>
+    <string name="word_eng_mimimal_25">There are shooting games and ballon blowing at temple festival in Nakhonsawan.</string>
+
+    <string name="thai_tone_6_15">อ่าง</string>
+    <string name="thai_tone_6_16">อ้าง</string>
+    <string name="word_thai_mimimal_26">คนอ้วนที่จังหวัดอ่างทองอ้าอึ้งอ้างว่าติดอ่าง</string>
+    <string name="word_eng_mimimal_26">A fat man of Angthong is murmuring and stuttering.</string>
+
+    <string name="thai_tone_6_17">เสื่อ</string>
+    <string name="thai_tone_6_18">เสื้อ</string>
+    <string name="word_thai_mimimal_27">เขาขายเสื้อสีสวยลายเสือบนเสื่อในตลาดนัดจังหวัดสุโขทัย</string>
+    <string name="word_eng_mimimal_27">He sells colorful-tiger-shirts on a mat at holiday market in Sukhothai.</string>
+
+    <string name="thai_tone_6_19">หนวด</string>
+    <string name="thai_tone_6_20">นวด</string>
+    <string name="word_thai_mimimal_28">หมอนวดมีหนวดหน้าตาหล่อดีอยู่ที่ตราด</string>
+    <string name="word_eng_mimimal_28">There is a good-looking man with moustache doing massage in Trat.</string>
+
+    <string name="thai_tone_6_21">ข่าย</string>
+    <string name="thai_tone_6_22">ค่าย</string>
+    <string name="word_thai_mimimal_29">ทหารในค่ายทาตาข่ายจับปลาริมน้าเจ้าพระยา</string>
+    <string name="word_eng_mimimal_29">The soldiers at the camp are making a fish trap near the Chao Phraya River.</string>
+
+    <string name="thai_tone_6_23">เก่า</string>
+    <string name="thai_tone_6_24">เก้า</string>
+    <string name="word_thai_mimimal_30">น้ากิ่งมีผ้าไหมเก่าเก้าผืน</string>
+    <string name="word_eng_mimimal_30">Auntie King has 9 old, silk pieces of clothing.</string>
+
+    <string name="thai_tone_6_25">ใหม่</string>
+    <string name="thai_tone_6_26">ไหม้</string>
+    <string name="word_thai_mimimal_31">บ้านที่เชียงใหม่ไฟไหม้ไม่เหลือซาก</string>
+    <string name="word_eng_mimimal_31">My house in Chiang Mai burnt completely.</string>
+
+    <string name="thai_tone_6_27">แก่</string>
+    <string name="thai_tone_6_28">แก้</string>
+    <string name="word_thai_mimimal_32">คนแก่แก้ผ้าอาบน้าริมแม่น้าน่าน</string>
+    <string name="word_eng_mimimal_32">An old man took a bath naked near Nan river.</string>
+
+    <string name="thai_tone_6_29">ไข่</string>
+    <string name="thai_tone_6_30">ไข้</string>
+    <string name="word_thai_mimimal_33">คนไข้กินไข่ลูกเขยเป็นอาหารเช้า</string>
+    <string name="word_eng_mimimal_33">The patients ate sweet-sauced eggs.</string>
+
+    <string name="thai_tone_6_31">ไหล่</string>
+    <string name="thai_tone_6_32">ไล่</string>
+    <string name="word_thai_mimimal_34">เด็กวิ่งไล่จับไหล่กันอย่างสนุกสนาน</string>
+    <string name="word_eng_mimimal_34">Those children is chasing one after another with joy.</string>
+
+    <string name="thai_tone_6_33">หนึ่ง</string>
+    <string name="thai_tone_6_34">นึ่ง</string>
+    <string name="word_thai_mimimal_35">วันนี้พี่หนึ่งนึ่งข้าวเหนียว</string>
+    <string name="word_eng_mimimal_35">Today, Nung streamed sticky rice.</string>
+
+    <string name="thai_tone_6_35">สั่น</string>
+    <string name="thai_tone_6_36">สั้น</string>
+    <string name="word_thai_mimimal_36">นักเรียนตัวสั่นโดนครูจับตัดผมสั้น</string>
+    <string name="word_eng_mimimal_36">The students are shaking when the teachers cut their hair.</string>
+
+    <string name="thai_tone_7_1">ค้า</string>
+    <string name="thai_tone_7_2">ขา</string>
+    <string name="word_thai_mimimal_37">มีแม่ค้าขาหมูอยู่ที่สุราษฎร์</string>
+    <string name="word_eng_mimimal_37">The pork leg seller is at Surat.</string>
+
+    <string name="thai_tone_7_3">เคี้ยว</string>
+    <string name="thai_tone_7_4">เขียว</string>
+    <string name="word_thai_mimimal_38">น้องมะเหมี่ยวเคี้ยวผักใบเขียวที่เยาวราช</string>
+    <string name="word_eng_mimimal_38">Mamiew likes to eat green vegetables at China Town.</string>
+
+    <string name="thai_tone_7_5">ม้า</string>
+    <string name="thai_tone_7_6">หมา</string>
+    <string name="word_thai_mimimal_39">ฟาร์มสัตว์ที่พังงาเลี้ยงทั้งม้า เลี้ยงทั้งหมา</string>
+    <string name="word_eng_mimimal_39">Phang-nga farm fed both horses and dogs.</string>
+
+    <string name="thai_tone_7_7">ฟ้า</string>
+    <string name="thai_tone_7_8">ฝา</string>
+    <string name="word_thai_mimimal_40">บ้านฉันที่ตรังรั้วสีฟ้าฝาบ้านเป็นไม้ไผ่</string>
+    <string name="word_eng_mimimal_40">My house in Trang is blue with a fence and bamboo wall.</string>
+
+    <string name="thai_tone_7_9">รู้</string>
+    <string name="thai_tone_7_10">หรู</string>
+    <string name="word_thai_mimimal_41">คนขับรถรู้มีที่พักหรูที่แม่ฮ่องสอน</string>
+    <string name="word_eng_mimimal_41">My driver knows that there is a luxury hotel in Mae Hong Son.</string>
+
+    <string name="thai_tone_7_11">เนื้อ</string>
+    <string name="thai_tone_7_12">เหนือ</string>
+    <string name="word_thai_mimimal_42">ทางเหนือมีเนื้อสวรรค์เจ้าอร่อยอยู่ที่ตลาดอัศวินลำปาง</string>
+    <string name="word_eng_mimimal_42">There is famous deep-fried meat in Atsawin Market, Lampang.</string>
+
+    <string name="thai_tone_7_13">นี้</string>
+    <string name="thai_tone_7_14">หนี</string>
+    <string name="word_thai_mimimal_43">วันนี้ฉันหนีไปปัตตานี</string>
+    <string name="word_eng_mimimal_43">Today, I take leave to Pattani.</string>
+
+    <string name="thai_tone_7_15">เล้า</string>
+    <string name="thai_tone_7_16">เหลา</string>
+    <string name="word_thai_mimimal_44">เมื่อวานเหลาไม้ทาเล้าหมูที่บ้านจังหวัดอุทัย</string>
+    <string name="word_eng_mimimal_44">I sharpened the wood to make a pig fence in Uthaithani.</string>
+
+    <string name="thai_tone_7_17">ซี้</string>
+    <string name="thai_tone_7_18">สี</string>
+    <string name="word_thai_mimimal_45">เพื่อนซี้ใส่เสื้อสีเหลืองดูคอนเสริต์เบิร์ดธงไชยที่อิมแพคฯ</string>
+    <string name="word_eng_mimimal_45">My best friend wore a yellow shirt to the Bird Thongchai Concert at Impact Arena.</string>
+
+    <string name="thai_tone_7_19">รื้อ</string>
+    <string name="thai_tone_7_20">หรือ</string>
+    <string name="word_thai_mimimal_46">บ้านไทดาที่เมืองเพชรกาลังจะรื้อหรืออย่างไร</string>
+    <string name="word_eng_mimimal_46">The Tai Dam houses in Phetburi are going to be demolished, or is it something else?</string>
+
+    <string name="thai_tone_7_21">น้อง</string>
+    <string name="thai_tone_7_22">หนอง</string>
+    <string name="word_thai_mimimal_47">เมื่อวานฉันพาน้องวิ่งรอบหนองหาน</string>
+    <string name="word_eng_mimimal_47">I took my sister to run around the Nong Han.</string>
+
+    <string name="thai_tone_7_23">พ้น</string>
+    <string name="thai_tone_7_24">ผล</string>
+    <string name="word_thai_mimimal_48">คนไทยเชื่อว่าเราหนีไม่พ้นผลกรรม</string>
+    <string name="word_eng_mimimal_48">Thais believe that we can’t run away from karma.</string>
+
 
 
     <string name="consonantsTitle">Consonants เสียงพยัญชนะ</string>
@@ -191,6 +448,6 @@
     <string name="learn_minimal_pairs_mid">สามัญ-เอก Mid-Low</string>
     <string name="learn_minimal_pairs_low">เอก-โท Low-Falling</string>
     <string name="learn_minimal_pairs_high">ตรี-จัตวา High-Rising</string>
-
+    <string name="credit">Phanintra T.</string>
 
 </resources>

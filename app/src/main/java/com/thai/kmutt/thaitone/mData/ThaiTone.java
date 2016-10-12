@@ -12,6 +12,15 @@ public class ThaiTone {
     String tone;
     String meaning;
     int img;
+    int sound;
+
+    public int getSound() {
+        return sound;
+    }
+
+    public void setSound(int sound) {
+        this.sound = sound;
+    }
 
     public ThaiTone() {
 

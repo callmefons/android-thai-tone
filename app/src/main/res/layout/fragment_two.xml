@@ -1,29 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
+    android:padding="@dimen/padding_layout"
+    android:gravity="center"
+    android:orientation="vertical"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#e6e6e6"
-    android:orientation="vertical">
-
+    android:background="@color/primary" >
 
     <TextView
+        android:gravity="right"
+        android:textSize="@dimen/headline"
         android:id="@+id/textView1"
-
-        android:layout_width="wrap_content"
+        android:textColor="@color/icons"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="ทำไมต้องฝึกออกเสียงภาษาไทย?"
-        android:textAlignment="center"
-        android:textSize="100px" />
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="ทำไมต้องฝึกออกเสียงภาษาไทย" />
 
     <TextView
+        android:gravity="center"
+        android:textSize="@dimen/display2"
         android:id="@+id/textView2"
-        android:layout_width="wrap_content"
+        android:textColor="@color/icons"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="ตามติดชีวิตของมะขิ่นว่าเธอฝึกออกเสียงภาษาไทยอย่างไร?"
-        android:textAlignment="center"
-        android:textSize="100px" />
-
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="ตามติดชีวิตของมะขิ่นว่าเธอฝึกออกเสียงภาษาไทยอย่างไร" />
 
 </LinearLayout>

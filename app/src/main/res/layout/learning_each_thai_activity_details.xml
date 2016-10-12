@@ -1,26 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout
-    android:layout_height="match_parent"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:fitsSystemWindows="true"
-    xmlns:tools="http://schemas.android.com/tools"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-    <android.support.design.widget.AppBarLayout
+    <include layout="@layout/toolbar"></include>
+
+    <ImageView
+        android:layout_weight="1"
+        android:scaleType="centerCrop"
+        android:src="@drawable/action01"
+        android:id="@+id/imgTone"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+    <LinearLayout
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay">
+        android:padding="@dimen/padding_layout">
 
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolBar"
+        <TextView
+            android:textSize="@dimen/display2"
+            android:id="@+id/nameTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medium Text"
+            android:textColor="@color/primary_text"/>
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:textSize="@dimen/body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="คลิกที่คำพื่อฟังเสียง"
+            android:textColor="@color/primary_text"/>
+
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:gravity="center"
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            android:popupTheme="@style/AppTheme.PopupOverlay"/>
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="@dimen/body"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="วรรณยุกต์ (Tone): "
+                android:textColor="@color/primary_text"/>
 
-            <include layout="@layout/learning_each_thai_content_detials"/>
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:textSize="@dimen/body"
+                android:id="@+id/nameTxtTone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description Text"
+                android:textColor="@color/colorOverlay"/>
 
-    </android.support.design.widget.AppBarLayout>
 
-</android.support.design.widget.CoordinatorLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="@dimen/body"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ความหมาย (Meaning): "
+                android:textColor="@color/primary_text"/>
 
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:textSize="@dimen/body"
+                android:id="@+id/nameTxtMeaning"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description Text"
+                android:textColor="@color/colorOverlay"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </LinearLayout>

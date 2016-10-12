@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -21,6 +22,8 @@ public class LearnByActionsDetailActivity extends AppCompatActivity {
     ImageButton btn_sound;
     MediaPlayer mp;
 
+    int img , sound;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,28 +31,41 @@ public class LearnByActionsDetailActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        toolbar.setContentInsetsAbsolute(0, 0);
+
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setDisplayShowTitleEnabled(false);
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
+
         txtNameThai = (TextView)findViewById(R.id.txtNameThai);
         txtNameEng = (TextView)findViewById(R.id.txtNameEng);
         imgAction = (ImageView) findViewById(R.id.imgActions);
+        btn_sound= (ImageButton)findViewById(R.id.btn_sound);
 
         Intent i = this.getIntent();
         String name_thai = i.getExtras().getString("NAME_THAI_KEY");
         String name_eng = i.getExtras().getString("NAME_ENG_KEY");
-        int img = i.getExtras().getInt("IMAGE_KEY");
+        img = i.getExtras().getInt("IMAGE_KEY");
+        sound = i .getExtras().getInt("SOUND_KEY");
 
         txtNameThai.setText(name_thai);
         txtNameEng.setText(name_eng);
         imgAction.setImageResource(img);
 
-//        final int sound = i.getExtras().getInt("SOUND_KEY");
-//        mp = MediaPlayer.create(this, sound);
-//
-//        btn_sound.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                mp.start();
-//            }
-//        });
+        mp = MediaPlayer.create(this, sound);
+
+        btn_sound.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mp.start();
+            }
+        });
 
 
     }

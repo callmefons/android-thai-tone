@@ -9,6 +9,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
@@ -30,6 +31,8 @@ public class VowelsDetailActivity extends AppCompatActivity {
     RelativeLayout btn_control;
     int position;
 
+    ImageView imageView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,6 +44,7 @@ public class VowelsDetailActivity extends AppCompatActivity {
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setDisplayShowTitleEnabled(false);
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -141,33 +145,31 @@ public class VowelsDetailActivity extends AppCompatActivity {
         };
 
         img = new int[]{
-                R.drawable.consonants01a,
-                R.drawable.consonants02a,
-                R.drawable.consonants01a,
-                R.drawable.consonants02a,
-                R.drawable.consonants01a,
-                R.drawable.consonants02a,
-                R.drawable.consonants01a,
-                R.drawable.consonants02a,
-                R.drawable.consonants01a,
-                R.drawable.consonants02a,
-                R.drawable.consonants01a,
-                R.drawable.consonants02a,
-                R.drawable.consonants01a,
-                R.drawable.consonants02a,
-                R.drawable.consonants01a,
-                R.drawable.consonants02a,
-                R.drawable.consonants01a,
-                R.drawable.consonants02a,
-                R.drawable.consonants01a,
-                R.drawable.consonants02a,
-                R.drawable.consonants01a,
-                R.drawable.consonants02a,
-                R.drawable.consonants01a
+                R.drawable.vowel01,
+                R.drawable.vowel02,
+                R.drawable.vowel04,
+                R.drawable.vowel05,
+                R.drawable.vowel06,
+                R.drawable.vowel07,
+                R.drawable.vowel08,
+                R.drawable.vowel09,
+                R.drawable.vowel10,
+                R.drawable.vowel11,
+                R.drawable.vowel12,
+                R.drawable.vowel13,
+                R.drawable.vowel14,
+                R.drawable.vowel15,
+                R.drawable.vowel16,
+                R.drawable.vowel17,
+                R.drawable.vowel18,
+                R.drawable.vowel19,
+                R.drawable.vowel20,
+                R.drawable.vowel21,
+                R.drawable.vowel22
         };
 
-        textTitle = (TextView) findViewById(R.id.headerTitle);
-        textTitle.setText(R.string.consonantsTitle);
+//        textTitle = (TextView) findViewById(R.id.headerTitle);
+//        textTitle.setText(R.string.vowelsTitle);
 
         loadData(position);
 
@@ -204,6 +206,7 @@ public class VowelsDetailActivity extends AppCompatActivity {
         //btn_control = (RelativeLayout) findViewById(R.id.btn_control);
         texttWord = (TextView) findViewById(R.id.txtVowels);
         textView = (TextView) findViewById(R.id.txtVowels2);
+        imageView = (ImageView)findViewById(R.id.imgVowel);
 
         texttWord.setText(txtWord[position]);
         mp = MediaPlayer.create(this, sound[position]);
@@ -216,6 +219,7 @@ public class VowelsDetailActivity extends AppCompatActivity {
             }
         });
 
+        imageView.setImageResource(img[position]);
 
         textView.setText(txt[position]);
 

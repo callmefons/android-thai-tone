@@ -53,8 +53,10 @@ public class TabFragment3 extends Fragment {
         String uriPath = "android.resource://com.thai.kmutt.thaitone/"+R.raw.pronuncaiation_video;
         Uri uri = Uri.parse(uriPath);
         video_player_view.setVideoURI(uri);
-        video_player_view.start();
+        video_player_view.seekTo(100);
 
+        //Auto start video
+        //video_player_view.start();
     }
 
 }

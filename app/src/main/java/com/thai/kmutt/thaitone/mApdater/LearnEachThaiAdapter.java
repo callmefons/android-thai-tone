@@ -6,11 +6,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.thai.kmutt.thaitone.R;
 import com.thai.kmutt.thaitone.mData.ThaiTone;
-import com.thai.kmutt.thaitone.mDetail.DetailActivity;
+import com.thai.kmutt.thaitone.mDetail.LearnEachThaiToneDetailActivity;
 
 import java.util.ArrayList;
 import java.util.TreeSet;
@@ -26,26 +27,26 @@ public class LearnEachThaiAdapter extends BaseAdapter{
 
     Context c;
 
-    ArrayList<Object> spaceCrafts;
+    ArrayList<Object> thaiTone;
     TreeSet<Integer> sectionHeader = new TreeSet<Integer>();
 
     LayoutInflater inflater;
 
-    public LearnEachThaiAdapter(Context c, ArrayList<Object> spaceCrafts) {
+    public LearnEachThaiAdapter(Context c, ArrayList<Object> thaiTones) {
         this.c = c;
-        this.spaceCrafts = spaceCrafts;
+        this.thaiTone = thaiTones;
 
         inflater= (LayoutInflater) c.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
     }
 
     @Override
     public int getCount() {
-        return spaceCrafts.size();
+        return thaiTone.size();
     }
 
     @Override
     public Object getItem(int position) {
-        return spaceCrafts.get(position);
+        return thaiTone.get(position);
     }
 
     @Override
@@ -92,20 +93,29 @@ public class LearnEachThaiAdapter extends BaseAdapter{
 
         switch (type) {
             case TYPE_ITEM:
-                TextView nameText = (TextView)view.findViewById(R.id.nameLabel);
+
+
+                TextView txtTitle = (TextView) view.findViewById(R.id.item);
+                ImageView imageView = (ImageView) view.findViewById(R.id.icon);
+                TextView extratxt = (TextView) view.findViewById(R.id.itemDescription);
+
+                //TextView nameText = (TextView)view.findViewById(R.id.nameLabel);
                 ThaiTone thaiTone = (ThaiTone) getItem(position);
 
                 final String name = thaiTone.getName();
                 final String tone = thaiTone.getTone();
                 final String meaning = thaiTone.getMeaning();
                 final int imgTone = thaiTone.getImg();
+                final int sound = thaiTone.getSound();
 
-                nameText.setText(name);
+                txtTitle.setText(name);
+                extratxt.setText(tone);
+                imageView.setImageResource(imgTone);
 
                 view.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        openDetailActivity(name,tone,meaning,imgTone);
+                        openDetailActivity(name,tone,meaning,imgTone,sound);
                     }
                 });
 
@@ -120,13 +130,14 @@ public class LearnEachThaiAdapter extends BaseAdapter{
         return view;
     }
 
-    public void openDetailActivity(String name, String tone, String meaning, int imgTone)
+    public void openDetailActivity(String name, String tone, String meaning, int imgTone, int sound)
     {
-        Intent i = new Intent(c, DetailActivity.class);
+        Intent i = new Intent(c, LearnEachThaiToneDetailActivity.class);
         i.putExtra("NAME_KEY", name);
         i.putExtra("NAME_TONE_KEY", tone);
         i.putExtra("NAME_MEANING_KEY", meaning);
         i.putExtra("IMAGE_TONE_KEY", imgTone);
+        i.putExtra("SOUND_KEY", sound);
 
         c.startActivity(i);
     }

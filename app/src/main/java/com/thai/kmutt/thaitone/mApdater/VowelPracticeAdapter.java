@@ -9,10 +9,7 @@ import android.widget.BaseAdapter;
 import android.widget.TextView;
 
 import com.thai.kmutt.thaitone.R;
-import com.thai.kmutt.thaitone.mData.ThaiTone;
 import com.thai.kmutt.thaitone.mData.Vowels;
-import com.thai.kmutt.thaitone.mDetail.DetailActivity;
-import com.thai.kmutt.thaitone.mDetail.VowelsDetailActivity;
 import com.thai.kmutt.thaitone.mDetail.VowelsPracticeDetailActivity;
 
 import java.util.ArrayList;
@@ -92,7 +89,7 @@ public class VowelPracticeAdapter extends BaseAdapter{
         switch (type) {
             case TYPE_ITEM:
 
-                TextView nameText = (TextView) view.findViewById(R.id.nameLabel);
+                TextView nameText = (TextView) view.findViewById(R.id.item);
                 Vowels vowels = (Vowels) getItem(position);
 
                 final int name = vowels.getName();

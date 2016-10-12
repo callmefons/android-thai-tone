@@ -1,97 +1,181 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".ConsonantsActivity"
+    android:id="@+id/learn_minimal_pairs_mid"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center_horizontal"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent">
+    tools:context="com.thai.kmutt.thaitone.mDetail.LearnMinimalPairsMidActivity">
+    <include layout="@layout/toolbar"></include>
 
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:background="?attr/colorPrimary"
-        android:elevation="6dp"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+    <ImageView
+    android:layout_margin="20dp"
+    android:layout_weight="5"
+    android:id="@+id/imgVowel"
+    android:scaleType="fitCenter"
+    android:layout_width="wrap_content"
+    android:layout_height="0dp"
+    android:src="@drawable/sample3">
 
+    </ImageView>
+    <ImageButton
+        android:layout_marginTop="10dp"
+        android:layout_weight="0.5"
+        android:id="@+id/btn_sound"
+        android:src="@android:drawable/ic_media_play"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp" />
 
     <LinearLayout
-        android:gravity="center_horizontal"
-        android:paddingRight="16dp"
-        android:paddingLeft="16dp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
         android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
         <TextView
-            android:layout_weight="0.1"
-            android:textSize="@dimen/textsize_headline"
-            android:text="@string/vowelsTitle"
-            android:id="@+id/headerTitle"
-            android:layout_width="wrap_content"
-            android:layout_height="0dp" />
-
-        <ImageButton
-            android:layout_weight="0.1"
-            android:layout_gravity="right"
-            android:id="@+id/btn_sound"
-            android:src="@android:drawable/ic_media_play"
-            android:layout_width="wrap_content"
-            android:layout_height="0dp" />
-
-        <ImageButton
-            android:layout_weight="0.5"
-            android:src="@drawable/consonants01a"
-            android:id="@+id/imgConsonants"
-            android:layout_width="wrap_content"
-            android:layout_height="0dp" />
-
-
-        <TextView
-            android:layout_weight="0.1"
-            android:layout_alignParentLeft="true"
-            android:text="txtVowels"
-            android:textSize="@dimen/textsize_headline"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/headline"
+            android:text="MID"
             android:id="@+id/txtVowels"
             android:layout_width="wrap_content"
-            android:layout_height="0dp" />
+            android:layout_height="wrap_content" />
         <TextView
-            android:layout_weight="0.1"
-            android:layout_alignParentRight="true"
-            android:text="txtConsonant"
-            android:textSize="@dimen/textsize_headline"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/headline"
+            android:text="MID"
             android:id="@+id/txtVowels2"
             android:layout_width="wrap_content"
-            android:layout_height="0dp" />
+            android:layout_height="wrap_content" />
 
-        <RelativeLayout
-            android:id="@+id/btn_control"
-            android:layout_weight="0.1"
-            android:layout_width="match_parent"
-            android:layout_height="0dp">
-
-            <Button
-                android:layout_alignParentLeft="true"
-                android:text="BACK"
-                android:textSize="@dimen/textsize_headline"
-                android:id="@+id/btn_back"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-
-            <Button
-                android:layout_alignParentRight="true"
-                android:text="NEXT"
-                android:textSize="@dimen/textsize_headline"
-                android:id="@id/btn_next"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-        </RelativeLayout>
     </LinearLayout>
 
+
+
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:padding="@dimen/padding_layout"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:id="@+id/btn_control"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_weight="1"
+            android:layout_alignParentLeft="true"
+            android:text="BACK"
+            android:textSize="@dimen/textsize_headline"
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_weight="1"
+
+            android:layout_alignParentRight="true"
+            android:text="NEXT"
+            android:textSize="@dimen/textsize_headline"
+            android:id="@id/btn_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
 </LinearLayout>
+
+
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<LinearLayout-->
+    <!--android:weightSum="6"-->
+    <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:id="@+id/learn_minimal_pairs_mid"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:orientation="vertical"-->
+    <!--android:gravity="center_horizontal"-->
+    <!--tools:context="com.thai.kmutt.thaitone.mDetail.LearnMinimalPairsMidActivity">-->
+    <!--<include layout="@layout/toolbar"></include>-->
+
+
+        <!--<TextView-->
+            <!--android:padding="@dimen/padding_layout"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_weight="1"-->
+            <!--android:textColor="@color/secondary_text"-->
+            <!--android:textSize="@dimen/headline"-->
+            <!--android:text="MID"-->
+            <!--android:id="@+id/headerTitle"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+        <!--<ImageView-->
+            <!--android:layout_margin="20dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:id="@+id/imgVowel"-->
+            <!--android:scaleType="fitCenter"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="200dp"-->
+            <!--android:src="@drawable/sample3"-->
+            <!--/>-->
+        <!--<ImageButton-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:id="@+id/btn_sound"-->
+            <!--android:src="@android:drawable/ic_media_play"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_width="50dp"-->
+            <!--android:layout_height="50dp" />-->
+        <!--<TextView-->
+            <!--android:layout_weight="0.5"-->
+            <!--android:textColor="@color/primary_text"-->
+            <!--android:textSize="@dimen/display1"-->
+            <!--android:text="MID"-->
+            <!--android:id="@+id/txtVowels"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+
+        <!--<TextView-->
+            <!--android:layout_weight="0.5"-->
+            <!--android:textColor="@color/primary_text"-->
+            <!--android:textSize="@dimen/display1"-->
+            <!--android:text="MID"-->
+            <!--android:id="@+id/txtVowels2"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+
+    <!--<LinearLayout-->
+        <!--android:padding="@dimen/padding_layout"-->
+        <!--android:layout_weight="1"-->
+        <!--android:gravity="center"-->
+        <!--android:id="@+id/btn_control"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <!--<Button-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:text="BACK"-->
+            <!--android:textSize="@dimen/textsize_headline"-->
+            <!--android:id="@+id/btn_back"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+
+        <!--<Button-->
+            <!--android:id="@+id/btn_next"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:text="NEXT"-->
+            <!--android:textSize="@dimen/textsize_headline"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+    <!--</LinearLayout>-->
+
+
+
+
+<!--</LinearLayout>-->
+
+

@@ -23,6 +23,18 @@ public class VowelsPracticeListActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        toolbar.setContentInsetsAbsolute(0, 0);
+
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setDisplayShowTitleEnabled(false);
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
+
         ListView lv = (ListView) findViewById(R.id.lv);
         VowelPracticeAdapter adapter = new VowelPracticeAdapter(this, VowelsCollection.getVowels());
         lv.setAdapter(adapter);

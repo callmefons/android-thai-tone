@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.thai.kmutt.thaitone.R;
@@ -95,19 +96,24 @@ public class LearnByThingsApdater extends BaseAdapter{
 
         switch (type) {
             case TYPE_ITEM:
-                TextView nameText = (TextView)view.findViewById(R.id.nameLabel);
+                TextView txtTitle = (TextView) view.findViewById(R.id.item);
+                ImageView imageView = (ImageView) view.findViewById(R.id.icon);
+                TextView extratxt = (TextView) view.findViewById(R.id.itemDescription);
                 LearnByThings learn_by_things = (LearnByThings) getItem(position);
 
                 final String name_thai = learn_by_things.getName_thai();
                 final String name_eng = learn_by_things.getName_eng();
                 final int img = learn_by_things.getImg();
+                final int sound = learn_by_things.getSound();
 
-                nameText.setText(name_thai);
+                txtTitle.setText(name_thai);
+                extratxt.setText(name_eng);
+                imageView.setImageResource(img);
 
                 view.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        openDetailActivity(name_thai, name_eng,img);
+                        openDetailActivity(name_thai, name_eng,img, sound);
                     }
                 });
 
@@ -122,12 +128,13 @@ public class LearnByThingsApdater extends BaseAdapter{
         return view;
     }
 
-    public void openDetailActivity(String name_thai, String name_eng,int img)
+    public void openDetailActivity(String name_thai, String name_eng,int img, int sound)
     {
         Intent i = new Intent(c, LearnByThingsDetailActivity.class);
         i.putExtra("NAME_THAI_KEY", name_thai);
         i.putExtra("NAME_ENG_KEY", name_eng);
         i.putExtra("IMAGE_KEY", img);
+        i.putExtra("SOUND_KEY", sound);
 
         c.startActivity(i);
     }

@@ -27,32 +27,32 @@ public class MainActivity extends AppCompatActivity {
         pager = (ViewPager) findViewById(R.id.pager);
         pager.setAdapter(adapter);
 
-        Button btn_next = (Button)findViewById(R.id.btn_next);
-        btn_next.setOnClickListener(new OnClickListener() {
-            public void onClick(View v) {
-                pager.setCurrentItem(pager.getCurrentItem() + 1);
-            }
-        });
-
-        Button btn_prev = (Button)findViewById(R.id.btn_prev);
-        btn_prev.setOnClickListener(new OnClickListener() {
-            public void onClick(View v) {
-                pager.setCurrentItem(pager.getCurrentItem() - 1);
-            }
-        });
-
-        Button btn_request = (Button)findViewById(R.id.btn_request);
-        btn_request.setOnClickListener(new OnClickListener() {
-            public void onClick(View v) {
-                Fragment fragment = getActiveFragment(pager, 2);
-                ThreeFragment threeFragment = (ThreeFragment)fragment;
-                if(threeFragment != null) {
-//                    pager.setCurrentItem(2);
-                    String message = threeFragment.getMyText();
-                    Log.i("Check", message);
-                }
-            }
-        });
+//        Button btn_next = (Button)findViewById(R.id.btn_next);
+//        btn_next.setOnClickListener(new OnClickListener() {
+//            public void onClick(View v) {
+//                pager.setCurrentItem(pager.getCurrentItem() + 1);
+//            }
+//        });
+//
+//        Button btn_prev = (Button)findViewById(R.id.btn_prev);
+//        btn_prev.setOnClickListener(new OnClickListener() {
+//            public void onClick(View v) {
+//                pager.setCurrentItem(pager.getCurrentItem() - 1);
+//            }
+//        });
+//
+//        Button btn_request = (Button)findViewById(R.id.btn_request);
+//        btn_request.setOnClickListener(new OnClickListener() {
+//            public void onClick(View v) {
+//                Fragment fragment = getActiveFragment(pager, 2);
+//                ThreeFragment threeFragment = (ThreeFragment)fragment;
+//                if(threeFragment != null) {
+////                    pager.setCurrentItem(2);
+//                    String message = threeFragment.getMyText();
+//                    Log.i("Check", message);
+//                }
+//            }
+//        });
     }
 
     public Fragment getActiveFragment(ViewPager container, int position) {

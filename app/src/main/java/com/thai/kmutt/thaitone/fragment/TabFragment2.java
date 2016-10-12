@@ -9,20 +9,23 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.thai.kmutt.thaitone.ConsonantsActivity;
 import com.thai.kmutt.thaitone.LearnEachThaiActivity;
+import com.thai.kmutt.thaitone.LearnMinimalPairsActivity;
 import com.thai.kmutt.thaitone.LearnToneByCategory;
 import com.thai.kmutt.thaitone.R;
+import com.thai.kmutt.thaitone.mDetail.LearnMinimalPairsMidActivity;
 
 /**
  * A simple {@link Fragment} subclass.
  */
 public class TabFragment2 extends Fragment {
 
-    Button btn_learning_each_thai_tones,
-            btn_learn_by_cat;
+    RelativeLayout btn_learning_each_thai_tones,
+            btn_learn_by_cat,btn_minimal;
     public TabFragment2() {
         // Required empty public constructor
     }
@@ -32,8 +35,9 @@ public class TabFragment2 extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_tab_fragment2, container, false);
-        btn_learning_each_thai_tones = (Button) rootView.findViewById(R.id.btn_learning_each_thai_tones);
-        btn_learn_by_cat = (Button)rootView.findViewById(R.id.btn_learn_by_cat);
+        btn_learning_each_thai_tones = (RelativeLayout) rootView.findViewById(R.id.btn_learning_each_thai_tones);
+        btn_learn_by_cat = (RelativeLayout)rootView.findViewById(R.id.btn_learn_by_cat);
+        btn_minimal = (RelativeLayout)rootView.findViewById(R.id.btn_minimal);
 
         Context context = getContext();
 
@@ -50,6 +54,14 @@ public class TabFragment2 extends Fragment {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getActivity(), LearnToneByCategory.class);
+                startActivity(intent);
+            }
+        });
+
+        btn_minimal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), LearnMinimalPairsActivity.class);
                 startActivity(intent);
             }
         });

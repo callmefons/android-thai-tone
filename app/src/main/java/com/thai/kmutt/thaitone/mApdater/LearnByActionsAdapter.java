@@ -6,11 +6,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.thai.kmutt.thaitone.R;
 import com.thai.kmutt.thaitone.mData.LearnByActions;
 import com.thai.kmutt.thaitone.mData.LearnByAnimal;
+import com.thai.kmutt.thaitone.mData.LearnByThings;
 import com.thai.kmutt.thaitone.mDetail.LearnByActionsDetailActivity;
 import com.thai.kmutt.thaitone.mDetail.LearnByAnimalDetailActivity;
 
@@ -95,19 +97,24 @@ public class LearnByActionsAdapter extends BaseAdapter {
 
         switch (type) {
             case TYPE_ITEM:
-                TextView nameText = (TextView)view.findViewById(R.id.nameLabel);
+                TextView txtTitle = (TextView) view.findViewById(R.id.item);
+                ImageView imageView = (ImageView) view.findViewById(R.id.icon);
+                TextView extratxt = (TextView) view.findViewById(R.id.itemDescription);
                 LearnByActions learan_by_actions = (LearnByActions) getItem(position);
 
                 final String name_thai = learan_by_actions.getName_thai();
                 final String name_eng = learan_by_actions.getName_eng();
                 final int img = learan_by_actions.getImg();
+                final int sound = learan_by_actions.getSound();
 
-                nameText.setText(name_thai);
+                txtTitle.setText(name_thai);
+                extratxt.setText(name_eng);
+                imageView.setImageResource(img);
 
                 view.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        openDetailActivity(name_thai, name_eng,img);
+                        openDetailActivity(name_thai, name_eng,img,sound);
                     }
                 });
 
@@ -122,12 +129,13 @@ public class LearnByActionsAdapter extends BaseAdapter {
         return view;
     }
 
-    public void openDetailActivity(String name_thai, String name_eng,int img)
+    public void openDetailActivity(String name_thai, String name_eng,int img, int sound)
     {
         Intent i = new Intent(c, LearnByActionsDetailActivity.class);
         i.putExtra("NAME_THAI_KEY", name_thai);
         i.putExtra("NAME_ENG_KEY", name_eng);
         i.putExtra("IMAGE_KEY", img);
+        i.putExtra("SOUND_KEY", sound);
 
         c.startActivity(i);
     }
